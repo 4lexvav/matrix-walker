@@ -2,8 +2,8 @@ package main
 
 import "fmt"
 
-func flatten(matrix [][]uint8) []uint8 {
-	var plain []uint8
+func flatten(matrix [][]int32) []int32 {
+	var plain []int32
 	n := len(matrix)
 	m := n
 
@@ -47,13 +47,13 @@ func flatten(matrix [][]uint8) []uint8 {
 }
 
 func main() {
-	matrix := [][]uint8{
+	matrix := [][]int32{
 		{1, 2, 3},
 		{4, 5, 6},
 		{7, 8, 9},
 	}
 
-	matrix2 := [][]uint8{
+	matrix2 := [][]int32{
 		{1, 2, 3, 1},
 		{4, 5, 6, 4},
 		{7, 8, 9, 7},
